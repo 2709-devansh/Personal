@@ -67,17 +67,22 @@ a:active {
   left: 0;
 }
 
-.photo img {
+.img{
   width: 200px;
+  margin-right: 1%;
   margin-top: 5%;
   margin-bottom: 5%;
-  margin-right: 2%;
+  border-radius: 9999px;
+}
+
+.img img {
+  width: 100%;  
   border-radius: 50%;
   transition: all 0.4s ease-in-out;
 }
 
 .photo img:hover {
-  transform: scale(1.2);
+  transform: scale(0.9);
   margin-right: 4%;
   box-shadow: 0px 0px 30px darkslategrey;
 }
