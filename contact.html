@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Made by Devansh Panthi." />
+    <title>Devansh Panthi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/CSS" href="CSS/contact_style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/cacf29784e.js" crossorigin="anonymous"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html">
+            <h3>Home</h3>
+        </a>
+        <a href="about.html">
+            <h3>About Me</h3>
+        </a>
+        <a href="#info">
+            <h3>Contact Me</h3>
+        </a>
+    </div>
+
+    <div class="info" id="info">
+        <div class="form">
+            <h2>Message Me</h2>
+            <form action="contact.html" onsubmit="openModal()">
+                <div class="i1">
+                    <input type="text" name="name" placeholder="Name" id="name" maxlength="25" required />
+                    <input type="text" name="phone" placeholder="Phone Number" id="phone" maxlength="10"
+                        required /><br />
+                </div>
+                <div class="i2">
+                    <input type="text" name="email" placeholder="Email" id="mail" required />
+                    <input type="text" name="country" placeholder="Country" id="country" required /><br />
+                </div>
+                <input type="text" name="message" placeholder="Message..." id="msg" required /><br />
+                <div class="button">
+                    <input type="submit" value="SUBMIT" id="submit" />
+                </div>
+            </form>
+        </div>
+
+        <div class="details">
+            <h2>My Contact Information</h2>
+            <h3>
+                <i class="fa-solid fa-house"></i> Bhopal, Madhya Pradesh, India
+            </h3>
+            <h3><i class="fa-solid fa-envelope"></i> devaanshpaanthi@gmail.com</h3>
+            <h3><i class="fa-solid fa-phone"></i> +91 7415675745</h3>
+            <h3><i class="fa-solid fa-school"></i> Delhi Public School, Kolar Road, Bhopal</h3>
+        </div>
+    </div>
+
+
+    <div class="map_heading">
+        <h2>I Stay In....</h2>
+    </div>
+    <div id="map">
+        <script src="JS/map.js"></script>
+    </div>
+
+    <div class="contact">
+        <h4> &#169 Devansh Panthi 2022 <br> All Rights Reserved </h4>
+        <h4>
+            <a href="https://github.com/2709-devansh" target="_blank">
+                <span><i class="fa fa-github fa github"></i></span>
+            </a>
+        </h4>
+    </div>
+</body>
+
+</html>

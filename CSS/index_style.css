@@ -1,0 +1,308 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0%;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  scroll-behavior: smooth;
+  margin: 0%;
+  background-color: rgb(25, 37, 55);
+  /* animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+
+.intro {
+  background-image: url("../Images/bg1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  margin: 0%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.header a {
+  padding-right: 3%;
+}
+
+.header a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.header h3 {
+  font-size: x-large;
+  font-family: "montserrat";
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.photo {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+
+.photo img {
+  width: 200px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+
+.photo img:hover {
+  transform: scale(1.2);
+  margin-right: 4%;
+  box-shadow: 0px 0px 30px darkslategrey;
+}
+
+.photo h1 {
+  font-size: 45px;
+  font-family: "poppins";
+  color: black;
+  display: inline-block;
+  position: relative;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 300px) {
+  .header {
+    justify-content: space-evenly;
+  }
+
+  .header h3 {
+    font-size: 12px;
+    margin: auto;
+  }
+
+  .header a {
+    padding-right: 0%;
+  }
+
+  .photo {
+    display: grid;
+    text-align: center;
+  }
+
+  .photo img {
+    width: 130px;
+    margin-top: 5%;
+    margin: auto;
+  }
+
+  .photo img:hover {
+    transform: scale(1.2);
+    margin: auto;
+    box-shadow: 0px 0px 30px darkslategrey;
+  }
+
+  .photo h1 {
+    color: white;
+    font-size: 35px;
+    margin-top: -100%;
+  }
+}
+
+@media screen and (min-width: 301px) and (max-width: 600px) {
+  .header {
+    justify-content: space-evenly;
+  }
+
+  .header h3 {
+    font-size: 16px;
+    margin: auto;
+  }
+
+  .header a {
+    padding-right: 0%;
+  }
+
+  .photo {
+    display: grid;
+    text-align: center;
+  }
+
+  .photo img {
+    width: 150px;
+    margin-top: 5%;
+    margin: auto;
+  }
+
+  .photo img:hover {
+    transform: scale(1.2);
+    margin: auto;
+    box-shadow: 0px 0px 30px darkslategrey;
+  }
+
+  .photo h1 {
+    color: #ffffff;
+    font-size: 38px;
+    margin-top: -100%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+  .header h3 {
+    font-size: 25px;
+  }
+
+  .header a {
+    padding-right: 5%;
+  }
+
+  .photo h1 {
+    color: white;
+  }
+
+  .photo h1:after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 5px;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1100px) and (height: 600px) {
+  .header h3 {
+    font-size: 25px;
+  }
+
+  .header a {
+    padding-right: 5%;
+  }
+
+  .photo h1 {
+    color: black;
+  }
+
+  .photo h1:after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 5px;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .header a h3:hover {
+    scale: 1.15;
+  }
+
+  .photo h1:after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 5px;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+  }
+}
+
+.contact {
+  background: linear-gradient(
+    to bottom right,
+    #c19a6c,
+    #ba8a65,
+    #b37a5f,
+    #ab6a58,
+    #a45a51
+  );
+  margin-top: 2vw;
+  padding: 0%;
+  text-align: center;
+  margin-bottom: 0%;
+  padding: 1%;
+}
+
+.contact h4 {
+  color: white;
+  font-family: "poppins";
+  font-weight: 600;
+}
+
+@media screen and (min-width: 601px) {
+  div.contact h4 {
+    font-size: larger;
+  }
+}
+
+@media screen and (min-width: 301px) and (max-width: 600px) {
+  div.contact h4 {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  div.contact h4 {
+    font-size: xx-small;
+  }
+}
+
+.contact a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+.github {
+  background-color: white;
+  color: #171515;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.contact i {
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 300px) {
+  .facebook,
+  .twitter,
+  .linkedin,
+  .fa.fa-google-plus {
+    padding: 5px;
+  }
+}
+
+.contact i:hover {
+  scale: 1.3;
+}
