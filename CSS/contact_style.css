@@ -17,9 +17,9 @@ body {
   scroll-behavior: smooth;
   margin: 0%;
   background-color: rgb(25, 37, 55);
-  /* animation: fadeInAnimation ease 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; */
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .header {
@@ -111,7 +111,6 @@ a:active {
 /* form and details style */
 .info {
   display: flex;
-  margin-top: 2vw;
 }
 
 .form {
@@ -166,11 +165,12 @@ a:active {
   font-weight: bold;
   text-align: center;
   background: linear-gradient(to bottom right, #f2a65a 0%, #772f1a 100%);
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
 }
 
 #submit:hover {
-  scale: 1.2;
-  transition: 0.3s ease-in-out;
+  opacity: 1;
 }
 
 .details h3 {
